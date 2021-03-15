@@ -19,3 +19,8 @@ header nav ul li{
     display: inline;
     padding-left: 10px;
 }
+
+/* Untuk Mode Responsive */
+section .mobile{
+    display:none;
+}
