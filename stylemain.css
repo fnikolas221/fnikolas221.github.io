@@ -1,11 +1,11 @@
 body {
-    background-color: rgb(26, 24, 24);
+    background-color: black;
     color: whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
 }
 
 header {
-    height: 575px;
+    height: 700px;
 }
 header nav ul{
     list-style-type: none;
@@ -13,13 +13,42 @@ header nav ul{
     padding: 5px 0 0 0;
     text-align: center;
     overflow: hidden;
+    font-family: 'PT Serif'
 }
-
+header .whoiam{
+    font-size: 30pt;
+    padding: 0;
+    margin:0;
+}
 header nav ul li{
     display: inline;
     padding-left: 10px;
 }
+/* Dekor Atas */
+header #decor1 {
+    position: absolute;
+    top: 25px;
+    opacity: 0.2;
+    right: -100px;
+}
+/* Dekor Bawah */
+header #decor2{
+    position: relative;
+    top: 150px;
+    right: 100px;
+    
+} 
 
+/* dekor poker */
+header #poker{
+    position: relative;
+    left: 250px;
+    bottom: 155px;
+}
+header #poker img{
+    width: 50px;
+    display: block;
+}
 /* Untuk Mode Responsive */
 section .mobile{
     display:none;
