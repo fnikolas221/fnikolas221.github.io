@@ -29,7 +29,7 @@ header #decor1 {
     position: absolute;
     top: 25px;
     opacity: 0.2;
-    right: -100px;
+    right: 0;
 }
 /* Dekor Bawah */
 header #decor2{
@@ -40,14 +40,14 @@ header #decor2{
 } 
 
 /* dekor poker */
-header #poker{
-    position: relative;
-    left: 250px;
+header #poker {
+    position: absolute;
+    right: 0;
     bottom: 155px;
 }
+
 header #poker img{
     width: 50px;
-    display: block;
 }
 /* Untuk Mode Responsive */
 section .mobile{
