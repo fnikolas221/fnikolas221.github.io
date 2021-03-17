@@ -60,11 +60,20 @@ header #poker img{
 }
 
 footer {
+    color:black;
     position: relative;
     bottom: 0;
     width: 100%;
     height: 50px;
     text-align: center;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+  }
+
+  footer a{
+      color:black;
+      font-family: 'PT Serif';
   }
 #projdesktop{
     font-size: 15pt;
@@ -97,13 +106,28 @@ footer {
 #projdesktop a:active {
     background-color: whitesmoke;
 }
-section p{
+#about p{
     position: relative;
     font-size: 400%;
     text-align: right;
-    color:whitesmoke;
-    text-decoration: none;
+    
+    background-image: url('/assets/profil.png');
+    height:380px;
+    background-repeat: no-repeat;
+    background-position-x: -170px;
+    background-position-y: -170px;
+    padding: 0;
+    margin: 60px 0 0 0;
+}
+
+#about a{
     opacity: 0.5;
+    color:white;
+}
+#about a:active{
+    opacity: 100%;
+    background-color: yellow;
+    
 }
 
 /* Mode Mobile */
