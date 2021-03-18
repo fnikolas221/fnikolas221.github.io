@@ -3,12 +3,53 @@ a{
     text-decoration: none;
     color: white;
 }
+body{
+    background-image: url(/assets/ellipse2.svg);
+    background-repeat: no-repeat;
+    background-position-x: -80px;
+    background-position-y: -30px;
+    background-size: 250px;
+
+}
+/* MENU (Semuanya ada di layout.css) */
 
 
+/* I AM */
+.desktop.first{
+    text-align: right;
+}
+
+    .desktop.i_am{
+        font-size: 20pt;
+        margin-right:10%;
+
+    }
+    .desktop.panam{
+        background-color: white;
+        height: 2px;
+        margin-left:40%;
+        margin-right: 10%;
+    }
+    .desktop.i_am.jobsme{
+        position: relative;
+        margin-bottom: 0;
+        margin-top:0;
+        float: right;
+        text-align: left;
+        font-size: 600%;
+    }
+
+.desktop.first{
+    background-image: url(/assets/ellipse2.png),url(/assets/jack.png);
+    background-position-x: right,10px;
+    background-repeat: no-repeat;
+    background-position-y: 230px,500px;
+    background-size: 300px,40px;
+    
+}
 /* FOOTER */
 
 /* MOBILE */
-
 @media screen and (max-width:425px){
     /* backround bagian 'i'am' */
     .mobile.first{
@@ -19,22 +60,10 @@ a{
         background-size: auto,auto,60px;
         
     }
-    /* Decoration for Menu */
-    header nav ul{
-        list-style-type: none;
-        margin: 0;
-        padding: 5px 0 0 0;
-        text-align: center;
-        overflow: hidden;
-        font-family: 'PT Serif';
-    }
+    /* MENU 
+    (semuanya di layout css)*/
 
-    header nav ul li{
-        display: inline;
-        padding-left: 10px;
-    }
-
-    /* Gambar pada class me */
+    /* ME */
     .i_am{
         margin-left:20px;
     }
@@ -93,4 +122,10 @@ a{
         background-color: yellow;
         
     }
-}  
+} 
+
+/* 
+1. baik mobile maupun desktop memiliki style navigasi
+yang sama
+
+*/
