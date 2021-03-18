@@ -51,6 +51,9 @@ body{
 
 /* MOBILE */
 @media screen and (max-width:425px){
+    body{
+        background-image: none;
+    }
     /* backround bagian 'i'am' */
     .mobile.first{
         background-image: url(/assets/ellipse3.svg),url(/assets/ellipse2.svg),url(/assets/jack.png);
