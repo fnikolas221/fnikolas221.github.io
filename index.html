@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylemain.css"> 
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="decor.css">  
     <title>Fernando | 2021</title>
 
     <!-- Fonts from google -->
@@ -12,33 +13,44 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-<header>
+<header class='mobile'>
     <nav><ul>
     <li href=><a href='/'>Home</a></li>
     <li href=><a href='#about'>About</a></li>
     <li href=><a href='/'>Contact</a></li>
-    </ul></nav>
-
-    <!-- Bagian I Am Nya -->
-    <div class="iam">
-        <h1>I am</h1>
-    </div><hr>
-<div class="whoiam">&lt;&thinsp;&thinsp;<span>Fernando <br> &thinsp;&thinsp; Nikolas</span> &thinsp;&gt;</div>
-    <img src="/assets/ellipse3.svg" alt="" id="decor1">
-    <img src="/assets/ellipse2.svg" alt="" id="decor2">
-
-
-    <!-- Bagian dekor poker -->
-    <span id='poker'>
-    </br><img src="/assets/jack.svg" alt=""></br>
-        <img src="/assets/jack.svg" alt=""></br>
-        <img src="/assets/jack.svg" alt=""></br>
-        <img src="/assets/jack.svg" alt="">
-    </span>
-    
+    </ul></nav>    
+</header>
+<header class='desktop'>
+    <nav><ul>
+    <li href=><a href='/'>Home</a></li>
+    <li href=><a href='#about'>About</a></li>
+    <li href=><a href='/'>Contact</a></li>
+    </ul></nav>    
 </header>
 
-<section id="projdesktop">
+<div class='mobile first'>
+    <!-- Bagian I Am Nya -->
+    <div class="mobile i_am">
+    <h1>I am</h1>
+    </div><hr>
+    <div class="mobile i_am jobsme">&lt;&thinsp;&thinsp;<span>Fernando <br> &thinsp;&thinsp; Nikolas</span> &thinsp;&gt;</div>
+    <!-- Menghapus img src karena ga diperlukan lagi -->
+
+    <div class='mobile poker'></div>
+</div>
+
+<section class='desktop first'>
+    <!-- Bagian I Am Nya -->
+    <div class="mobile i_am">
+    <h1>I am</h1>
+    </div><hr>
+    <div class="mobile i_am jobsme">&lt;&thinsp;&thinsp;<span>Fernando <br> &thinsp;&thinsp; Nikolas</span> &thinsp;&gt;</div>
+    <!-- Menghapus img src karena ga diperlukan lagi -->
+
+    <div class='mobile poker'></div>
+</section>
+
+<!-- <section id="projdesktop">
     <h2>Projects</h2>
     <figure>
         <img src='assets/foto1.jpg' alt="Proyek 1">
@@ -88,7 +100,7 @@
     <br>&copy;Fernando Nikolas
     
         </div>
-    </footer>
+    </footer> -->
 
     <script src='animation.js'></script>
 </body>

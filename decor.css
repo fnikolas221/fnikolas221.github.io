@@ -1,0 +1,53 @@
+/* Main Decoration */
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* MOBILE */
+/* Decoration for Menu */
+header nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 0 0 0;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'PT Serif';
+}
+
+header nav ul li{
+    display: inline;
+    padding-left: 10px;
+}
+
+/* Gambar pada class me */
+.mobile.i_am{
+    margin-left:20px;
+}
+
+.mobile.i_am.jobsme{
+    font-size: 30pt;
+}
+
+/* backround bagian 'i'am' */
+.mobile.first{
+    background-image: url(/assets/ellipse3.svg),url(/assets/ellipse2.svg);
+    background-position-x: right,-101px;
+    background-repeat: no-repeat;
+    background-position-y: 0px,280px;
+}
+
+/* Khusus bagian pokernya */
+.mobile.poker{
+    background-image: url(/assets/jack.svg);
+    height: 200px;
+    width: 60px;
+    background-size: 50px;
+    position: absolute;
+    right: 0;
+    bottom: 90px;
+}
+
+/* @media screen and (max-width:425px){
+
+}  */

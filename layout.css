@@ -1,3 +1,4 @@
+/* Default */
 body {
     background-color: black;
     color: whitesmoke;
@@ -5,59 +6,39 @@ body {
     margin:0;
     padding:0;
 }
-a{
-    text-decoration: none;
-    color: white;
+.mobile{
+    visibility:hidden;
 }
+
+/* Menu */
 header {
-    height: 700px;
-}
-header nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 5px 0 0 0;
-    text-align: center;
-    overflow: hidden;
-    font-family: 'PT Serif';
+    margin: 5px 0 50px 0;
+    padding: 0;
 }
 
-header .iam{
-    margin-left:20px;
+/* I am section (div-desktop) */
+.desktop.first{
+    height: 500px;
+    margin-top: 50px;
 }
 
-header .whoiam{
-    font-size: 30pt;
-    margin-left:20px;
-}
-header nav ul li{
-    display: inline;
-    padding-left: 10px;
-}
-/* Dekor Atas */
-header #decor1 {
-    position: absolute;
-    top: 25px;
-    opacity: 0.2;
-    right: 0;
-}
-/* Dekor Bawah */
-header #decor2{
-    position: relative;
-    top: 150px;
-    right: 100px;
-    
+/* MOBILE */
+@media screen and (max-width:425px){
+    .desktop{
+        visibility: hidden;
+    }
+    .mobile{
+        visibility: visible;
+    }
+    .mobile.first{
+        height: 500px;
+        
+        margin-top: 50px;
+    }
 } 
 
-/* dekor poker */
-header #poker {
-    position: absolute;
-    right: 0;
-    bottom: 155px;
-}
+/* 
 
-header #poker img{
-    width: 50px;
-}
 
 footer {
     color:black;
@@ -131,7 +112,7 @@ footer {
 }
 
 /* Mode Mobile */
-/* Untuk Mode Responsive */
+/* Untuk Mode Responsive
 #projmobile{
     display:none;
-}
+} */
