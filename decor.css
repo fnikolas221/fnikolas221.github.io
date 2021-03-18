@@ -4,50 +4,93 @@ a{
     color: white;
 }
 
+
+/* FOOTER */
+
 /* MOBILE */
-/* Decoration for Menu */
-header nav ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 5px 0 0 0;
-    text-align: center;
-    overflow: hidden;
-    font-family: 'PT Serif';
-}
 
-header nav ul li{
-    display: inline;
-    padding-left: 10px;
-}
+@media screen and (max-width:425px){
+    /* backround bagian 'i'am' */
+    .mobile.first{
+        background-image: url(/assets/ellipse3.svg),url(/assets/ellipse2.svg),url(/assets/jack.png);
+        background-position-x: right,-101px,right;
+        background-repeat: no-repeat;
+        background-position-y: 0px,280px,200px;
+        background-size: auto,auto,60px;
+        
+    }
+    /* Decoration for Menu */
+    header nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 5px 0 0 0;
+        text-align: center;
+        overflow: hidden;
+        font-family: 'PT Serif';
+    }
 
-/* Gambar pada class me */
-.mobile.i_am{
-    margin-left:20px;
-}
+    header nav ul li{
+        display: inline;
+        padding-left: 10px;
+    }
 
-.mobile.i_am.jobsme{
-    font-size: 30pt;
-}
+    /* Gambar pada class me */
+    .i_am{
+        margin-left:20px;
+    }
 
-/* backround bagian 'i'am' */
-.mobile.first{
-    background-image: url(/assets/ellipse3.svg),url(/assets/ellipse2.svg);
-    background-position-x: right,-101px;
-    background-repeat: no-repeat;
-    background-position-y: 0px,280px;
-}
+    .i_am.jobsme{
+        font-size: 30pt;
+    }
 
-/* Khusus bagian pokernya */
-.mobile.poker{
-    background-image: url(/assets/jack.svg);
-    height: 200px;
-    width: 60px;
-    background-size: 50px;
-    position: absolute;
-    right: 0;
-    bottom: 90px;
-}
+    /* PROJECT SESSION */
+    .project{
+        font-size: 15pt;
+        text-align: center;
+        }
+        
+        .project  figure{
+        padding:5px 0 6px 0;
+        background-color: whitesmoke;
+        font-size:medium;
+        color:black;
+        font-family: 'PT Serif';}
+        
+        .project img {width: 90%;}
 
-/* @media screen and (max-width:425px){
+    /* LINK */
+    .project a {
+        background-color: red;
+        color: white;
+        padding:2px;
+        text-decoration: none;
+        font-size: small;
+        margin-top: 10px;
+    
+    }
+    .project a:hover {
+        background-color: whitesmoke;
+        color:black;
+    }
+    
 
-}  */
+    /* ABOUT */
+    .about {
+        font-size: 400%;
+        text-align: right;
+        background-image: url('/assets/profil.png');      
+        background-repeat: no-repeat;
+        background-position-x: -170px;
+        background-position-y: -170px;  
+    }
+    
+    .about a{
+        opacity: 0.5;
+        color:white;
+    }
+    .about a:active{
+        opacity: 100%;
+        background-color: yellow;
+        
+    }
+}  
