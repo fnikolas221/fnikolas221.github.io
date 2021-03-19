@@ -39,18 +39,69 @@ body{
         font-size: 600%;
     }
 
-.desktop.first{
-    background-image: url(/assets/ellipse2.png),url(/assets/jack.png);
-    background-position-x: right,10px;
-    background-repeat: no-repeat;
-    background-position-y: 230px,500px;
-    background-size: 300px,40px;
-    
-}
-/* FOOTER */
+    .desktop.first{
+        background-image: url(/assets/ellipse2.png),url(/assets/jack.png);
+        background-position-x: right,10px;
+        background-repeat: no-repeat;
+        background-position-y: 230px,400px;
+        background-size: 300px,40px;
+        
+    }
 
+/* PROJECT */
+.desktop.projects{
+    text-align: center;
+    height: 600px;
+}
+.row{
+    font-size: 15pt;
+    text-align: center;
+    display: table;
+    clear: both;
+    margin: 0 0 0 0;
+    align-items: center;
+    margin:auto;
+    }
+.column{
+    float: left;
+    width: 150px;
+    margin:10px;
+    background-color: white;
+    color:black;
+    font-family: serif;
+    padding: 10px;
+    border-radius: 15px;
+}
+.column img {width: 100%;border-radius: 15px;}
+
+/* SANDBOX */
+.desktop.sandbox{
+    font-size: 60pt;
+    height: 680px;
+    margin-right: 30px;
+    background-image: url(/assets/box.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position-x: right;
+    background-position-y: 300px;
+}
+.desktop.sand{
+    margin-right: 30px;
+    float: right;
+    text-align: center;
+}
+.desktop.sandbox img{
+    position: absolute;
+    opacity: 0.6;
+    height: 600px;
+    width: 100%;
+} 
+/* FOOTER */
+footer .desktop{
+    height: 300px;
+}
 /* MOBILE */
-@media screen and (max-width:425px){
+@media screen and (max-width:639px){
     body{
         background-image: none;
     }
@@ -106,21 +157,21 @@ body{
     }
     
 
-    /* ABOUT */
-    .about {
+    /* sandbox */
+     .sandbox {
         font-size: 400%;
         text-align: right;
-        background-image: url('/assets/profil.png');      
+        background-image: url('/assets/box.png');      
         background-repeat: no-repeat;
-        background-position-x: -170px;
-        background-position-y: -170px;  
-    }
+        background-position-x: -120px;
+        background-size: 100%;  
+    } 
     
-    .about a{
+    .sandbox a{
         opacity: 0.5;
         color:white;
     }
-    .about a:active{
+    .sandbox a:active{
         opacity: 100%;
         background-color: yellow;
         

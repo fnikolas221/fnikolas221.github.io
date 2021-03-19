@@ -16,9 +16,11 @@ header .desktop{
     font-size:30pt;
 }
 
+header nav ul .desktop{
+    margin: 0 40px 0 0;
+}
 header nav ul{
     list-style-type: none;
-    margin: 0 40px 0 0;
     padding: 5px 0 0 0;
     text-align: right;
     overflow: hidden;
@@ -38,7 +40,7 @@ header nav ul li{
     }
 
 .desktop.first{
-    height: 800px;
+    height: 670px;
     }
 
 /* LAYOUT PROJECT (kosong) */
@@ -62,7 +64,7 @@ footer a{
 }
 
   /* MOBILE */
-@media screen and (max-width:425px){
+@media screen and (max-width:639px){
     .desktop{
     display: none;
     }
@@ -79,7 +81,7 @@ footer a{
     margin-top: 50px;
     }
     .about{
-        height:380px;
+        height:300px;
         padding: 0;
         margin: 60px 0 0 0;
     }
