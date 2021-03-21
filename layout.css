@@ -1,5 +1,6 @@
 /* DEFAULT */
 body {
+display: table;
 background-color: black;
 color: whitesmoke;
 font-family: 'Source Sans Pro', sans-serif;
@@ -47,19 +48,47 @@ header nav ul li{
 
 /* LAYOUT ABOUT (kosong) */
 
-/* FOOTER */
-footer{
+/* LAYOUT CONTACTS */
+.desktop.contact {
     text-align: center;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    font-size: 100%;
-    position: relative;
-    bottom: 0;
-    color:black;
+    padding-top: 10%;
 }
-footer a{
-    color:black;
+.desktop.contact form textarea{
+    resize: none;
+    width: 23%;
+    height: 5%;
+    text-align: left;
+}
+.desktop.contact.input{
+    color: black;
+    background-color:  #4388e2;
+    font-size: 12pt;
+    margin: 5px 0 0 0;
+    outline: 0;
+    padding: 10px 30px;
+    border: 2px solid #4388e2;
+    box-sizing: inherit;
+cursor: pointer;
+transition: all 0.5s;
+}
+
+.desktop.contact.input:hover{border-color: wheat;color:white;
+}
+/* FOOTER */
+body > footer{
+    display: table-row;
+    margin: 0;
+    font-size: 100%;
+    bottom: 0;
+    color:#1B242F;
+    background-color: white;
+    /* background-image: url(/assets/sp1.png); */
+    /* background-position: 0 10px;
+    background-repeat: no-repeat;
+    background-size: 130%; */
+}
+footer  a{
+    color:#1B242F;
     font-family: 'PT Serif';
 }
 
