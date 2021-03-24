@@ -15,11 +15,17 @@ body{
 
 
 /* I AM */
-.desktop.first{
+.first{
     text-align: right;
+    background-image: url(/assets/ellipse2.png),url(/assets/jack.png);
+    background-position-x: right,10px;
+    background-repeat: no-repeat;
+    background-position-y: 230px,400px;
+    background-size: 300px,40px;
+    
 }
 
-    .desktop.i_am{
+    .i_am{
         font-size: 20pt;
         margin-right:10%;
 
@@ -30,7 +36,7 @@ body{
         margin-left:40%;
         margin-right: 10%;
     }
-    .desktop.i_am.jobsme{
+    .i_am.jobsme{
         position: relative;
         margin-bottom: 0;
         margin-top:0;
@@ -39,14 +45,7 @@ body{
         font-size: 600%;
     }
 
-    .desktop.first{
-        background-image: url(/assets/ellipse2.png),url(/assets/jack.png);
-        background-position-x: right,10px;
-        background-repeat: no-repeat;
-        background-position-y: 230px,400px;
-        background-size: 300px,40px;
-        
-    }
+
 
 /* PROJECT */
 .desktop.projects{
@@ -136,7 +135,8 @@ body{
         background-image: none;
     }
     /* backround bagian 'i'am' */
-    .mobile.first{
+    .first{
+        text-align: left;
         background-image: url(/assets/ellipse3.svg),url(/assets/ellipse2.svg),url(/assets/jack.png);
         background-position-x: right,-101px,right;
         background-repeat: no-repeat;
@@ -150,9 +150,11 @@ body{
     /* ME */
     .i_am{
         margin-left:20px;
+        font-size: medium;
     }
 
     .i_am.jobsme{
+        float: left;
         font-size: 30pt;
     }
 

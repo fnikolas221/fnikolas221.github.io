@@ -13,11 +13,8 @@ padding:0;
 /* LAYOUT MENU */
 header {margin: 5px 0 50px 0;padding: 0;}
 
-header .desktop{
-    font-size:30pt;
-}
 
-header nav ul .desktop{
+header nav ul{
     margin: 0 40px 0 0;
 }
 header nav ul{
@@ -40,7 +37,7 @@ header nav ul li{
     margin-top: 100px;
     }
 
-.desktop.first{
+.first{
     height: 670px;
     }
 
@@ -103,6 +100,7 @@ footer  a{
 
     header nav ul{
         text-align: center;
+        margin: 0;
 
     }
     .first{
