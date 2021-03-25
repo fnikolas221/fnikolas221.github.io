@@ -30,7 +30,10 @@ header nav ul li{
     display: inline;
     margin-right: 15px;
 }
-
+header a:hover{
+    color:black;
+    background-color: yellow;
+}
 /* LAYOUT I AM */
     /* default */
 .first{
@@ -46,17 +49,23 @@ header nav ul li{
 /* LAYOUT ABOUT (kosong) */
 
 /* LAYOUT CONTACTS */
-.desktop.contact {
-    text-align: center;
-    padding-top: 10%;
+#contact{
+    width: 100%; height: 500px;background-color: #252934;clear: both;
 }
-.desktop.contact form textarea{
+.contact {
+    text-align: center;
+    padding-top: 5%;
+}
+.contact form{
+    display: inline-table;
+}
+.contact form textarea{
     resize: none;
-    width: 23%;
-    height: 5%;
+    width: 95%;
+    height: 100px;
     text-align: left;
 }
-.desktop.contact.input{
+.input{
     color: black;
     background-color:  #4388e2;
     font-size: 12pt;
@@ -69,11 +78,12 @@ cursor: pointer;
 transition: all 0.5s;
 }
 
-.desktop.contact.input:hover{border-color: wheat;color:white;
+.input:hover{border-color: wheat;color:white;
 }
 /* FOOTER */
 body > footer{
     display: table-row;
+    text-align: center;
     margin: 0;
     font-size: 100%;
     bottom: 0;
@@ -87,6 +97,7 @@ body > footer{
 footer  a{
     color:#1B242F;
     font-family: 'PT Serif';
+    margin-right: 5px;
 }
 
   /* MOBILE */
@@ -107,6 +118,9 @@ footer  a{
     height: 600px;
     margin-top: 50px;
     }
+    #contact{
+        height: 400px;background-color: #252934;clear: both;
+    }
     .about{
         height:300px;
         padding: 0;
@@ -116,4 +130,5 @@ footer  a{
         display: inline;
         padding-left: 10px;
     }
+
 } 
