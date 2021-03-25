@@ -46,7 +46,7 @@ body{
         font-size: 600%;
     }
     /* ANIMASI */
-    .i_am.jobsme h1{margin: 0;font-size: 100pt;}
+    .i_am.jobsme h1{margin: 0;font-size: 90%;}
     
 
 
@@ -169,7 +169,7 @@ body{
         float: left;
     }
     /* ANIMASI */
-    .i_am.jobsme h1{margin: 0;font-size: 40pt;}
+    .i_am.jobsme h1{margin: 0;font-size: 45%;}
     /* projects SESSION */
     .projects{
         font-size: 15pt;
