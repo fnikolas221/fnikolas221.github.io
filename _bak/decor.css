@@ -1,0 +1,224 @@
+/* Main Decoration */
+a{
+    text-decoration: none;
+    color: white;
+}
+body{
+    background-image: url(/assets/ellipse2.svg);
+    background-repeat: no-repeat;
+    background-position-x: -80px;
+    background-position-y: -30px;
+    background-size: 250px;
+
+}
+/* MENU (Semuanya ada di layout.css) */
+
+
+
+/* I AM */
+.first{
+    text-align: right;
+    background-image: url(/assets/ellipse2.png),url(/assets/jack.png);
+    background-position-x: right,10px;
+    background-repeat: no-repeat;
+    background-position-y: 230px,400px;
+    background-size: 300px,40px;
+    
+}
+
+    .i_am{
+        font-size: 20pt;
+        margin-right:10%;
+
+    }
+    .desktop.panam{
+        background-color: white;
+        height: 2px;
+        margin-left:40%;
+        margin-right: 10%;
+    }
+    .i_am.jobsme{
+        position: relative;
+        margin-bottom: 0;
+        margin-top:0;
+        float: right;
+        text-align: left;
+        font-size: 600%;
+    }
+    /* ANIMASI */
+    .i_am.jobsme h1{margin: 0;font-size: 90%;}
+    
+
+
+
+/* PROJECT */
+.desktop.projects{
+    text-align: center;
+    height: 600px;
+}
+.desktop.projects a:hover{
+    background-color: red;
+}
+.row {
+    display: table;
+    clear: both;
+    margin: 0;
+    align-items: center;
+    margin:auto;
+    font-size: 15pt;
+}
+.column {
+    float: left;
+}
+.row.projects{
+    text-align: center;
+    }
+.column.projects{
+    width: 150px;
+    margin:10px;
+    background-color: white;
+    color:black;
+    font-family: serif;
+    padding: 10px;
+    border-radius: 15px;
+    
+}
+.column.projects img {border-radius: 15px;}
+.column img{
+    width: 100%;
+}
+
+/* SANDBOX */
+.desktop.sandbox{
+    font-size: 60pt;
+    height: 550px;
+    margin-left: 4%;
+    text-align: center;
+    clear:both;
+}
+
+.desktop.box{
+    padding-top: 10%;
+    padding-left: 1%;
+    float:left;
+    height: 100%;
+    width: 60%;
+    margin-bottom: 5%;
+}
+.desktop.line{
+    float:left;
+    background-color: white;
+    width: 0.5%;
+    padding:10% 0 10% 0;
+    height: 20%;
+    margin-top: 10%;
+}
+.desktop.sand{
+    float: left;
+    text-align: center;
+    width: 29%;
+    height: 100%;
+    background-image: url(/assets/box.png);
+    background-repeat: no-repeat;
+    background-size: 70%;
+    background-position-x:right;
+    background-position-y: 100%;
+    
+}
+.sand a:hover{
+    background-color:white;
+    color:black;
+    
+}
+.column.sand{
+    width: 30%;
+    margin: 1%;
+}
+
+
+/* MOBILE */
+@media screen and (max-width:639px){
+    .desktop{
+        display: none;
+        }
+    body{
+        background-image: none;
+        width: 100%;
+    }
+    /* Menu */
+    /* backround bagian 'i'am' */
+    .first{
+        text-align: left;
+        background-image: url(/assets/ellipse3.svg),url(/assets/ellipse2.svg),url(/assets/jack.png);
+        background-position-x: right,-101px,right;
+        background-repeat: no-repeat;
+        background-position-y: 0px,280px,200px;
+        background-size: auto,auto,60px;
+        
+    }
+    /* MENU 
+    (semuanya di layout css)*/
+
+    /* ME */
+    .i_am{
+        margin-left:20px;
+        font-size: medium;
+    }
+
+    .i_am.jobsme{
+        float: left;
+    }
+    /* ANIMASI */
+    .i_am.jobsme h1{margin: 0;font-size: 45%;}
+    /* projects SESSION */
+    .projects{
+        font-size: 15pt;
+        text-align: center;
+        }
+        
+        .projects  figure{
+        padding:5px 0 6px 0;
+        background-color: whitesmoke;
+        font-size:medium;
+        color:black;
+        border-radius: 5px;
+        font-family: 'PT Serif';}
+        
+        .projects img {width: 90%;border-radius: 5px;}
+
+    /* LINK */
+    .projects a {
+        background-color: red;
+        color: white;
+        padding:2px;
+        text-decoration: none;
+        font-size: small;
+        margin-top: 10px;
+    
+    }
+    .projects a:hover {
+        background-color: whitesmoke;
+        color:black;
+    }
+    
+
+    /* sandbox */
+     .sandbox {
+        font-size: 400%;
+        text-align: right;
+        background-image: url('/assets/box.png');      
+        background-repeat: no-repeat;
+        background-position-x: -120px;
+        background-size: 100%;  
+    } 
+    
+    .sandbox a{
+        opacity: 0.5;
+        color:white;
+    }
+    .sandbox a:hover{
+        opacity: 100%;
+        background-color: yellow;
+        
+    }
+} 

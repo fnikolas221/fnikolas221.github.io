@@ -1,0 +1,134 @@
+/* DEFAULT */
+body {
+display: table;
+background-color: black;
+color: whitesmoke;
+font-family: 'Source Sans Pro', sans-serif;
+margin:0;
+padding:0;
+}
+
+.mobile{display: none;}
+
+/* LAYOUT MENU */
+header {margin: 5px 0 50px 0;padding: 0;}
+
+
+header nav ul{
+    margin: 0 40px 0 0;
+}
+header nav ul{
+    list-style-type: none;
+    padding: 5px 0 0 0;
+    text-align: right;
+    overflow: hidden;
+    font-family: 'PT Serif';
+    font-size:110%;
+}
+
+header nav ul li{
+    display: inline;
+    margin-right: 15px;
+}
+header a:hover{
+    color:black;
+    background-color: yellow;
+}
+/* LAYOUT I AM */
+    /* default */
+.first{
+    margin-top: 100px;
+    }
+
+.first{
+    height: 670px;
+    }
+
+/* LAYOUT PROJECT (kosong) */
+
+/* LAYOUT ABOUT (kosong) */
+
+/* LAYOUT CONTACTS */
+#contact{
+    width: 100%; height: 500px;background-color: #252934;clear: both;
+}
+.contact {
+    text-align: center;
+    padding-top: 5%;
+}
+.contact form{
+    display: inline-table;
+}
+.contact form textarea{
+    resize: none;
+    width: 95%;
+    height: 100px;
+    text-align: left;
+}
+.input{
+    color: black;
+    background-color:  #4388e2;
+    font-size: 12pt;
+    margin: 5px 0 0 0;
+    outline: 0;
+    padding: 10px 30px;
+    border: 2px solid #4388e2;
+    box-sizing: inherit;
+cursor: pointer;
+transition: all 0.5s;
+}
+
+.input:hover{border-color: wheat;color:white;
+}
+/* FOOTER */
+body > footer{
+    display: table-row;
+    text-align: center;
+    margin: 0;
+    font-size: 100%;
+    bottom: 0;
+    color:#1B242F;
+    background-color: white;
+    /* background-image: url(/assets/sp1.png); */
+    /* background-position: 0 10px;
+    background-repeat: no-repeat;
+    background-size: 130%; */
+}
+footer  a{
+    color:#1B242F;
+    font-family: 'PT Serif';
+    margin-right: 5px;
+}
+
+  /* MOBILE */
+@media screen and (max-width:639px){
+    .desktop{
+    display: none;
+    }
+    .mobile{
+    display: block;
+    }
+
+    header nav ul{
+        text-align: center;
+        margin: 0;
+
+    }
+    .first{
+    height: 600px;
+    margin-top: 50px;
+    }
+    #contact{
+        height: 400px;background-color: #252934;clear: both;
+    }
+    .about{
+        height:300px;
+        padding: 0;
+        margin: 60px 0 0 0;
+    }
+    header nav ul li{
+        display: inline;
+        padding-left: 10px;
+    }
+
+} 
