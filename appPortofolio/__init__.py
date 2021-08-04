@@ -1,8 +1,7 @@
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager, login_manager
-from flask.config import Config
-from .configuration import config
+from .config import Config
 
 db = SQLAlchemy()
 
@@ -34,8 +33,8 @@ def create_app():
     from .main import main as main_blueprint
     app.register_blueprint(main_blueprint)
 
-    #for error handling
-    from .errors import errors as error_blueprint
-    app.register_blueprint(error_blueprint)
+    # #for error handling
+    # from .errors import errors as error_blueprint
+    # app.register_blueprint(error_blueprint)
 
     return app

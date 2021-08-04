@@ -1,6 +1,6 @@
 from flask_login import UserMixin
 from . import db
-import datetime
+from datetime import datetime
 from pytz import timezone
 
 class Admin(db.Model, UserMixin):
@@ -40,5 +40,5 @@ class AppSetting(db.Model):
 class UserConfig(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     appsettingID = db.Column(db.Integer, db.ForeignKey('app_setting.id'))
-    user_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    user_id = db.Column(db.Integer, db.ForeignKey('admin.id'))
     configvalue = db.Column(db.String(250),nullable=False)
