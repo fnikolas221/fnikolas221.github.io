@@ -1,166 +1,74 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="decor.css">  
-    <title>Fernando | 2021</title>
+{% extends 'base.html' %}
 
-    <!-- Fonts from google -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
-</head>
-<body>
+{% block style %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/homepage.css') }}">
+{% endblock style %}
 
-<!-- MENU -->
-<header>
-    <nav><ul>
-    <li href=><a href='/'>Home</a></li>
-    <li href=><a href='#about'>About</a></li>
-    <li href=><a href="#contact">Contact</a></li>
-    </ul></nav>    
-</header>
-
-<!-- I AM -->
-<div class='first'>
-    <!-- Bagian I Am Nya -->
-    <div class="i_am">
-    <h1>I am</h1>
-    </div>
-    <span class="mobile"><hr></span> 
-    <p class='desktop panam'> </p>
-    <div class="i_am jobsme">
-        <h1>
-            <a href="" class="typewrite" data-period="2000" 
-            data-type='[ "Animator", "Pythonist",
-            "Illustrator","Writter", "Fernando Nikolas" ]'>
-              <span class="wrap"></span>
-            </a>
-          </h1>
-    <!-- &thinsp;
-    &thinsp;<span>Fernando <br>
-    &thinsp; Nikolas</span>
-    &thinsp; -->
-    </div>
-</div>
-
-<section class="mobile projects">
-    <h2>Projects</h2>
-    <figure>
-    <img src='assets/foto1.jpg' alt="Proyek 1">
-    <figcaption></figcaption>Lipsum</figcaption>
-    </figure>
-    <figure>
-    <img src='assets/foto2.jpg' alt="Proyek 1">
-    <figcaption>Lipsum</figcaption>
-    </figure>
-    <figure>
-    <img src='assets/foto3.jpg' alt="Proyek 1">
-    <figcaption>Loren Ipsum</figcaption>
-    </figure>
-
-    <a href="/">Click Here For More...</a>
-</section>
-
-<div class = "desktop projects">
-    <h2>Projects</h2>
-    <div class="row projects">
-        <div class="column projects">
-            <img src='assets/foto1.jpg' alt="Proyek 1">
-            <br>Lorem Ipsum
-            </div>
-            <div class="column projects">
-            <img src='assets/foto2.jpg' alt="Proyek 1">
-            <br>Lorem Ipsum
-            </div>
-            <div class="column projects">
-            <img src='assets/foto3.jpg' alt="Proyek 1">
-            <br>Lorem Ipsum
-            </div>
-    </div>
-        <div class="row projects">
-            <div class="column projects">
-                <img src='assets/foto1.jpg' alt="Proyek 1">
-                <br>Lorem Ipsum
-                </div>
-                <div class="column projects">
-                <img src='assets/foto2.jpg' alt="Proyek 1">
-                <br>Lorem Ipsum
-                </div>
-                <div class="column projects">
-                <img src='assets/foto3.jpg' alt="Proyek 1">
-                <br>Lorem Ipsum
-                </div>
+{% block content %}
+<!-- CONTENT -->
+    <!-- I AM -->
+    <div class="content-body right-padding">
+        <div class="name-tag">
+            <div class="medium">I am</div>
+            <div class="left-margin line"></div>
+            <div class="big">Fernando Nikolas</div>
         </div>
-    <a href="/">Click Here For More...</a>
     </div>
-<!-- SANDBOX -->
-<section class="mobile sandbox">
-    <a href="index.html" target="_blank" rel="noopener noreferrer">
-    My</br>
-    Sand<br>Box</a>
-</section>
-<!-- SANDBOX -->
-<section class="desktop sandbox">
-    <div class="desktop box">
-        <div class="row sand">
-            <div class="column sand">
-                <img src='assets/foto1.jpg' alt="Proyek 1">
-                </div>
-                <div class="column sand">
-                <img src='assets/foto2.jpg' alt="Proyek 1">
-                </div>
-                <div class="column sand">
-                <img src='assets/foto3.jpg' alt="Proyek 1">
-                </div>
-        </div>
-        <div class="row sand">
-            <div class="column sand">
-                <img src='assets/foto1.jpg' alt="Proyek 1">
+
+    <!-- ABOUT -->
+    <div class="content-body centered-text">
+        <div><h2>About</h2></div>
+        <div class="centered-container">
+            <div class="quote quote-with-picture">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Sit ipsam quae et facilis pariatur maiores cumque, 
+                alias incidunt nulla qui dolores quod, quibusdam iste voluptatibus 
+                delectus eius! Similique, labore odit.
                 
-                </div>
-                <div class="column sand">
-                <img src='assets/foto2.jpg' alt="Proyek 1">
-                </div>
-                <div class="column sand">
-                <img src='assets/foto3.jpg' alt="Proyek 1">
-                </div>
+            </div>
         </div>
     </div>
-    <div class="desktop line">
+    <!-- PROJECTS -->
+    <div class="content-body divided-2fr">
+        <div class="left-paddingx2 left left-border">
+            <div class="table3 centered-container">
+                <div class="project-image"><img src="assets/foto1.jpg" alt=""></div>
+                <div class="project-image"><img src="assets/foto2.jpg" alt=""></div>
+                <div class="project-image"><img src="assets/foto3.jpg" alt=""></div>
+                <div class="project-image"><img src="assets/foto4.jpg" alt=""></div>
+                <div class="project-image"><img src="assets/foto5.jpg" alt=""></div>
+                <div class="project-image"><img src="assets/foto6.jpg" alt=""></div>
+            </div>
+        </div>
+        <div class="right right-padding right-border" style="width: 20%;">
+            <h1>PROJECTS</h1>
+            <br>Here's my favorite projects
+        </div>
+
     </div>
-    <div class="desktop sand">
-    <a href="index.html" target="_blank" rel="noopener noreferrer">
-    </br>
-    Sand<br>Box</a></div>
-</section>
 
-<!-- Conta -->
-<div id="contact">
-    <div class="contact">
-    <form>
-    Contact Me<br><br>
-    <input type="text" placeholder="Your Name" name="name"><br><br>
-    <input type="email" placeholder="Your Email" name="email"><br><br>
-    <textarea name="message" placeholder="Your message"></textarea><br><br>
-    <input class="input" type="Submit" value="submit">
-    </form>
-    </div>
+    <!-- CONTACT -->
+    <div class="content-body left-right-paddingx2">
+        <h1>Contact</h1>
+        <p>
+            Feel Free to contact me
+        </p>
+        <div class="w-form">
+            <form id="wf-form-Contact-Form" name="wf-form-Contact-Form" data-name="Contact Form" class="formcontact">
+               <div class="flex">
+                  <div class="_2column _2columnform"><input type="text" class="input inputhalf w-input" maxlength="256" name="First-Name" data-name="First Name" placeholder="First Name" id="First-Name" required=""></div>
+                  <div class="_2column _2columnform"><input type="text" class="input inputhalf w-input" maxlength="256" name="Last-Name" data-name="Last Name" placeholder="Last Name" id="Last-Name" required=""></div>
+               </div>
+               <input type="email" class="input w-input" maxlength="256" name="email" data-name="Email" placeholder="Email Address" id="email" required="">
+               <textarea placeholder="Message..." maxlength="5000" id="Message" name="Message" data-name="Message" required="" class="input inputtextarea w-input"></textarea>
 
-</div>
 
-<!-- FOOTER -->
-<footer>    
-    <a href="mailto:nikolasfernando2001@gmail.com">nikolasfernando2001@gmail.com</a>
-    <br>&copy;Fernando Nikolas
-    <br>
-    <a href="instagram.com"><img src="/assets/insta.svg" alt=""></a>
-    <a href="dribble.com"><img src="/assets/dribble.svg" alt=""></a>
-    <a href="github.com"><img src="/assets/github.svg" alt=""></a>
-    <a href="linkedin.com"><img src="/assets/linkedin.svg" alt=""></a>
-</footer>
-<script src='animation.js'></script>
-</body>
-</html>
+               <input type="submit" value="Submit" data-wait="Please wait..." class="buttonright buttoncontact w-button">
+            </form>
+         </div>
+    </div> 
+
+<!-- CONTENT -->
+
+{% endblock content %}
+<!-- CONTENT -->

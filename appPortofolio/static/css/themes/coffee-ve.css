@@ -1,0 +1,12 @@
+/* FIRST THEME */
+:root {
+    --home-bg-color:#ffff; 
+    --std-font-color:#ffff;
+    --first-palette:#34130a;
+    --second-palette:#241007;
+    --third-palette:#444444;
+    --last-palette:#010001;
+    --first-font:'Times New Roman', Times, serif;
+    --second-font:Arial, Helvetica, sans-serif;
+
+  }

@@ -4,18 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    {% if  %}
-        <title>{{ title }} @2021</title>
-    {% else %}
-        <title>Fernando Nikolas | Portofolio @2021</title>
-    {% endif %}
+    <title>Fernando Nikolas R | @2021</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
-    <!-- Fonts from google -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
-    
+    <!-- THEME -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/themes/coffee-ve.css') }}">
+    {% block style %}
+        
+    {% endblock style %}
 </head>
 <body>
-    
+    <!-- MENU AND HEADER -->
+    <div class="nonlist header-section right-padding">
+        <ul>
+            <li><button class="std-button">Home</button></li>
+        </ul>
+    </div>
+    {% block content %}
+        
+    {% endblock content %}
+    <!-- FOOTER AND TRADEMARK -->
+    <div class="content-body footer left-right-paddingx2">
+        <div class="insightful"><em>Let's build something together ~nikolasfernando2001@gmail.com</em></div>
+        <div class="table2">
+            <div class="footer-title">
+                Fernando<br>Nikolas
+            </div>
+            <div class="table3">
+                <div>
+                    <h3>Company</h3>
+                    <p>Home</p>
+                    <p>Projects</p>
+                    <p>Sandbox</p>
+                    <p>Blogs</p>
+                    <p>About</p>
+                </div>
+
+
+                <div>
+                    <h3>Social Media</h3>
+                    <p>Instagram</p>
+                    <p>Facebook</p>
+                    <p>LinkedIn</p>
+                    <p>Github</p>
+                </div>
+                
+                <div>
+                    <h3>General Inquieries</h3>
+                    <p>nikolasfernando2001@gmail.com</p>
+                </div>
+
+
+            <div>
+                <div class="footer-info"></div>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="trademark left-right-paddingx2"> © Fernando Nikolas @2021</div>
 </body>
 </html>
+

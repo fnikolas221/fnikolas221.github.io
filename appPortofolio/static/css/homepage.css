@@ -1,0 +1,95 @@
+/* Text and Characters  */
+.name-tag{
+    font-size: 100pt;
+    text-align: right;
+}
+
+
+/* COPYCAT */
+.w-form {
+    margin: 0 0 15px;
+}
+
+._2column._2columnform {
+    width: 50%;
+    padding-right: 25px;
+}
+
+.input.inputhalf {
+    width: 100%;
+}
+
+
+.input {
+    width: 97%;
+    height: 56px;
+    max-width: 544px;
+    margin-bottom: 25px;
+    padding-right: 28px;
+    padding-left: 28px;
+    border: 0 transparent;
+    border-radius: 6px;
+    background-color: hsla(0,0%,100%,.07);
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.w-input, .w-select {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 8px 12px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    vertical-align: middle;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+
+.flex {
+    display: flex;
+    width: 100%;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.flex, .hero {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+}
+
+
+.input.inputtextarea {
+    height: auto;
+    min-height: 130px;
+    padding-top: 14px;
+}
+
+
+pre, textarea {
+    overflow: auto;
+}
+
+
+.buttonright.buttoncontact, .empty, .navbar {
+    background-color: transparent;
+}
+
+input.w-button {
+    -webkit-appearance: button;
+}
+
+.buttonright {
+    display: inline-block;
+    margin-top: 0;
+    padding-right: 42px;
+    font-weight: 900;
+    height: 50px;
+    text-align: center;
+}
